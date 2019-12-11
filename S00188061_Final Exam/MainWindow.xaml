@@ -7,14 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="249" Margin="77,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" RenderTransformOrigin="0.456,0.496"/>
-        <TextBlock HorizontalAlignment="Left" Margin="77,78,0,0" TextWrapping="Wrap" Text="All Players" VerticalAlignment="Top" RenderTransformOrigin="0.802,0.805"/>
-        <Button Content="Add&gt;&gt;" HorizontalAlignment="Left" Margin="324,167,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="&lt;&lt;Remove" HorizontalAlignment="Left" Margin="324,268,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="480,77,0,0" TextWrapping="Wrap" Text="Selected Players" VerticalAlignment="Top" Width="120"/>
-        <ComboBox HorizontalAlignment="Left" Margin="141,19,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="37,18,0,0" TextWrapping="Wrap" Text="Formation&#xD;&#xA;" VerticalAlignment="Top" Width="75"/>
-        <TextBox HorizontalAlignment="Left" Height="249" Margin="480,106,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="193"/>
+        <TextBox x:Name="playeraddtbx" HorizontalAlignment="Left" Height="249" Margin="77,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" RenderTransformOrigin="0.456,0.496"/>
+        <TextBlock x:Name="Allplayerstbx" HorizontalAlignment="Left" Margin="77,78,0,0" TextWrapping="Wrap" Text="All Players" VerticalAlignment="Top" RenderTransformOrigin="0.802,0.805"/>
+        <Button x:Name="btnadd" Content="Add&gt;&gt;" HorizontalAlignment="Left" Margin="324,167,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnRemove" Content="&lt;&lt;Remove" HorizontalAlignment="Left" Margin="324,268,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="Selectedplayerstbx" HorizontalAlignment="Left" Height="23" Margin="480,77,0,0" TextWrapping="Wrap" Text="Selected Players" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="Formationcbx" HorizontalAlignment="Left" Margin="141,19,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Formationtbx" HorizontalAlignment="Left" Height="23" Margin="37,18,0,0" TextWrapping="Wrap" Text="Formation&#xD;&#xA;" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="playerremovetbx" HorizontalAlignment="Left" Height="249" Margin="480,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" TextChanged="TextBox_TextChanged"/>
+        <TextBlock x:Name="Spacestbx" HorizontalAlignment="Left" Margin="480,373,0,0" TextWrapping="Wrap" Text="Spaces " VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
